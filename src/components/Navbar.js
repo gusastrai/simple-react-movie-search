@@ -1,14 +1,21 @@
-import React from 'react';
+import React from "react";
 
 function Navbar({ onSearch }) {
   return (
     <nav className="bg-gradient-to-r from-blue-500 to-indigo-600 flex justify-between items-center shadow px-4 sm:px-8 py-4">
-      <div className="text-white text-4xl font-bold">iclix</div>
+      <div className="flex items-center">
+        <img
+          src="/iclix-logo.png"
+          alt="iclix logo"
+          className="h-8 w-8 mr-2"
+        />
+        <div className="text-white text-4xl font-bold">iclix</div>
+      </div>
       <div className="relative w-1/2">
         <input
           type="text"
           placeholder="Search Movie..."
-          className="w-full p-2 pl-10 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"  
+          className="w-full p-2 pl-10 rounded focus:outline-none focus:ring-2 focus:ring-indigo-400"
           onChange={(e) => onSearch(e.target.value)}
         />
         <svg
