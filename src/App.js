@@ -1,5 +1,6 @@
 import { getMovies, searchMovie } from "./api";
 import { useState, useEffect } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import NotFound from "./components/NotFound";
@@ -46,6 +47,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <SpeedInsights />
       <Navbar onSearch={search} />
       <main className="p-4 sm:p-8">
         {movies.length === 0 ? <NotFound/> : <MovieLists />}
