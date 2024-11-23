@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyButton = ({ title }) => {
   return (
-    <button className="flex-1 flex justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-lg font-medium px-4 py-2 rounded transform transition duration-300 hover:scale-105 hover:shadow-lg">
+    <button className="flex-1 flex justify-center items-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-lg font-medium px-4 py-2 rounded transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
       <svg
         className="w-8 h-8"
         fill="none"
